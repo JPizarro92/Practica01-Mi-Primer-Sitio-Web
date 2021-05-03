@@ -1,7 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
-    background: white;
+    background: #e8e9e8;
     font-size: 1rem;
     line-height: 1.4em;
     margin: 0%;
@@ -17,14 +21,14 @@ p{
 }
 
 .container{
-    width: 95%;
+    width: 90%;
     max-width: 1250px;
     margin: 0 auto;
     padding: 0.8rem ;
 }
 
 .header{
-    background: #E1E8E1;
+    background: #f5f5f5;
     color: white;
     /*para dejarlo fijo*/
     position: fixed;
@@ -34,7 +38,7 @@ p{
 }
 
 .header a{
-    color: #333;
+    color: #3d4543;
     text-decoration: none;
     
 }
@@ -80,9 +84,9 @@ p{
 .content{
     padding-top: 5rem;
 }
-
+/*
 .footer{
-    background: #E1E8E1;
+    background: #3d4543;
     padding: 1.5rem 0 0 0; 
     text-align: center;
     margin-top: 5.5rem;
@@ -91,9 +95,9 @@ p{
 a.datosPersonales{
     text-decoration: none;
     list-style: none;
-    color: #333;
+    color: #e7e8e7;
 }
-
+*/
 
 @media only screen and (max-width: 650px){
     /* 650px */
