@@ -1,7 +1,10 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
@@ -9,6 +12,10 @@ body{
     font-size: 1rem;
     line-height: 1.4em;
     margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    align-items: flex-end;
 }
 
 h1{
@@ -80,24 +87,119 @@ p{
     background: #4a4a4a;
     color: white;
 }
-
-.content{
-    padding-top: 5rem;
-}
 /*
-.footer{
-    background: #3d4543;
-    padding: 1.5rem 0 0 0; 
-    text-align: center;
-    margin-top: 5.5rem;
+************************************************
+            Cuerpo centro (Index)
+************************************************
+
+*/
+
+/*      Columna 1*/
+.content{
+    padding-top: 8rem;
+    width: 70%;
+    float: left;
 }
 
-a.datosPersonales{
-    text-decoration: none;
-    list-style: none;
-    color: #e7e8e7;
+.news{
+    padding-top: 8rem;
+    width: 25%;
+    float: left;
 }
+
+
+/*Columna 2*/
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 250%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.slider:nth-child(2) ul{
+    animation-timing-function: step-start;
+}
+
+.slider:nth-child(3) ul{
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    cursor: pointer;
+}
+
+/*
+************************************************
+            Cuerpo centro (Contactos)
+************************************************
 */
+.main{
+    margin-top: 8rem;
+}
+.subsection {
+    background: white !important;
+    margin-bottom: 20px;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.columns {
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+    display: block;
+    
+}
+
+.columns h2{
+    margin-bottom: 1rem;
+    color: rgb(199, 69, 30);
+}
+
+.columns i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+/*
+************************************************
+            Cuerpo centro (Certificados)
+************************************************
+*/
+
+.btn-certificates li{
+    list-style: none;
+    background: #1d7ac7;
+    height: 1.6rem;
+    margin: 5px;
+    padding: 3px 3px;
+    border-radius: 5px;
+    border-style: initial;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.btn-certificates li>a{
+    color: white;
+    list-style: none;
+    width: 100%;
+}
+
+
 
 @media only screen and (max-width: 650px){
     /* 650px */
@@ -130,4 +232,93 @@ a.datosPersonales{
         border-radius: 5px;
     }
 
+}
+
+.main-documents{
+    margin-top: 8rem;
+    display:ruby;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 40%;
+    padding: 15px;
+}
+
+.formulario{
+    margin-top: 30px;
+    padding: 3px;
+    justify-content: center;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px ;
+}
+
+.formulario input[type="text"], input[type="password"]{
+    font-size: 20px;
+    width:  85%;
+    padding: 0px;
+    margin: 0;
+    border: none;
+    
+}
+
+.item-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    padding: 0;
+}
+
+.icon{
+    padding: 5px;
+    min-width: 35px;
+    height: 30px;
+    text-align: center;
+    background: rgb(175, 180, 180);
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: #999;
+    font-size: 20px;
+    padding: 15px 20px;
+    border: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: black;
+    color: white;
+}
+
+.conten-form{
+    justify-content: center;
+}
+
+.formulario{
+    border: 1px solid #aaa;
+    background: white !important;
+    
+}
+
+.formulario>p{
+    text-align: center;
+}
+
+@keyframes cambio{
+    0%  {margin-left:   0; }
+    20% {margin-left:   0; }
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -100%;}
+    70% {margin-left: -100%;}
+
+    75% {margin-left: -100%;}
+    95% {margin-left: -100%;}
 }

@@ -1,7 +1,9 @@
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 footer{
     /*position: absolute;*/
     /*box-sizing: border-box;*/
+
     bottom: 0;
     left: 0;
     right: 0;
@@ -9,8 +11,10 @@ footer{
     height: auto;
     width: 100%;
     font-family: "Open Sans";
-    padding-top: 40px;
+    padding-top: 15px;
     color: #fff;
+    clear: both;
+    position: inherit;
 }
 
 .footer-content{  
@@ -22,7 +26,7 @@ footer{
 }
 
 .footer-content h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
@@ -44,12 +48,11 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .socials li{
-    margin: 0 10px;
-
+    margin: 0 5px;
 }
 
 .socials a{
@@ -70,7 +73,7 @@ footer{
 .footer-bottom{
     background: #000;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
